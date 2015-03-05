@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dead_simple_authorization/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "a"
+  spec.name          = "dead_simple_authorization"
   spec.version       = DeadSimpleAuthorization::VERSION
   spec.authors       = ["Pantelis Vratsalis"]
   spec.email         = ["pvratsalis@gmail.com"]
