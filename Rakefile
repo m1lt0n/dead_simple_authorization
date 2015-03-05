@@ -1,8 +1,8 @@
-require 'rake/testtask'
+require 'rspec/core/rake_task'
+require 'bundler/gem_tasks'
 
-Rake::TestTask.new do |t|
-  t.libs << 'test'
+RSpec::Core::RakeTask.new(:spec) do |task|
+  task.rspec_opts = ['--color', '--format', 'documentation']
 end
 
-desc "Run tests"
-task :default => :test
+task :default => :spec
