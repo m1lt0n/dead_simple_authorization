@@ -24,6 +24,7 @@ module DeadSimpleAuthorization
     # error, but returns the boolean outcome of the check
     #
     def can?(user, action, resource)
+      action = action.to_sym if action.is_a? String
       policy_class = "#{resource.class}Policy"
       policy = Object::const_get(policy_class).new(resource, user)
       policy.send("#{action.to_s}?")
