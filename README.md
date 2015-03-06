@@ -27,7 +27,7 @@ class PostPolicy < DeadSimpleAuthorization::Policy::Base
 end
 ```
 
-That's it! Now, by including DeadSimpleAuthorization::Helpers in a controller for example, we can check permissions with either can? or authorize method this way:
+Note that the Policy objects are instantiated with user and resource, so in this case user holds the user passed to the can? or authorize methods and resource a Post instance. That's it! Now, by including DeadSimpleAuthorization::Helpers in a controller for example, we can check permissions with either can? or authorize method this way:
 
 ```ruby
 can?(current_user, :update, post)
