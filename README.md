@@ -1,5 +1,7 @@
 # dead_simple_authorization
 
+[![Gem Version](https://badge.fury.io/rb/dead_simple_authorization.png)](https://badge.fury.io/rb/dead_simple_authorization)
+
 ## What is dead_simple_authorization?
 It's a simple gem for authorization. The main concepts around dead_simple_authorization are: users, resources and permissions. Using a couple of simple naming conventions, it organizes the way in which access to a resource (an activerecord model for example) by a user (e.g. a web application's user) is checked.
 
